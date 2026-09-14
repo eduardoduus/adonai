@@ -34,7 +34,6 @@ a { text-decoration: none; color: inherit; }
 
 /* ===================== LOGO ===================== */
 .logo {
-  position: relative;
   display: inline-flex;
   align-items: center;
 }
@@ -43,23 +42,8 @@ a { text-decoration: none; color: inherit; }
   width: auto;
   display: block;
 }
-.logo-motos {
-  position: absolute;
-  right: 2px;
-  bottom: -7px;
-  font-weight: 700;
-  font-size: 7px;
-  letter-spacing: 2.5px;
-  color: var(--white);
-}
-.logo-footer { margin: 0 auto 22px; }
 .logo-footer .logo-img { height: 52px; }
-.logo-footer .logo-motos {
-  right: 4px;
-  bottom: -11px;
-  font-size: 11px;
-  letter-spacing: 4px;
-}
+.logo-footer { margin: 0 auto 22px; }
 
 /* ===================== HEADER / NAV ===================== */
 .site-header { background: var(--dark); }
@@ -147,7 +131,7 @@ a { text-decoration: none; color: inherit; }
 .hero {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1400 / 686;
+  aspect-ratio: 1392 / 531;
   background: var(--dark);
 }
 
@@ -556,8 +540,17 @@ body.hero-ready .hero-image.hero-anim { opacity: 1; transform: scale(1); }
 
 @media (max-width: 720px) {
   .container { padding: 0 24px; }
-  .hero { aspect-ratio: auto; min-height: 560px; }
-  .hero-inner { padding-bottom: 30px; }
+  .hero { aspect-ratio: auto; min-height: unset; }
+  .hero-inner { padding-bottom: 24px; position: relative; z-index: 2; }
+  .hero-image {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    object-fit: contain;
+    object-position: center;
+  }
   .hero h1 { font-size: 30px; }
   .plano-card { padding: 34px 24px 40px; }
   .plano-card .preco { font-size: 42px; }
