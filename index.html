@@ -8,6 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<noscript>
+<style>
+  .reveal, .reveal-stagger > *, .hero-anim, .hero-image.hero-anim { opacity: 1 !important; transform: none !important; }
+</style>
+</noscript>
 </head>
 <body>
 
@@ -31,22 +36,22 @@
   <section class="hero" id="home">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>SUA MOTO.<br>SEU TRABALHO.<br>SUA CONQUISTA.</h1>
-        <p>Venda, locação com opção de compra e oficina própria em Goiânia. Aprovação rápida para quem precisa sair rodando essa semana.</p>
-        <a href="https://wa.me/5564993400268?text=Ola!%20Fiquei%20interessado" target="_blank" rel="noopener" class="btn btn-white">
+        <h1 class="hero-anim">SUA MOTO.<br>SEU TRABALHO.<br>SUA CONQUISTA.</h1>
+        <p class="hero-anim">Venda, locação com opção de compra e oficina própria em Goiânia. Aprovação rápida para quem precisa sair rodando essa semana.</p>
+        <a href="https://wa.me/5564993400268?text=Ola!%20Fiquei%20interessado" target="_blank" rel="noopener" class="btn btn-white hero-anim">
           Fale no WhatsApp agora
           <span class="btn-circle"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#161C18" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
       </div>
     </div>
-    <img class="hero-image" src="assets/hero-rider.png" alt="Motociclista de aplicativo com bag de entrega dirigindo moto">
+    <img class="hero-image hero-anim" src="assets/hero-bg.png" alt="Equipe Adonai Motos: motoboys com bag de entrega e mensagem 'Fala conosco e já saia hoje mesmo com sua moto!'">
   </section>
 </header>
 
 <!-- ===================== COMO FUNCIONA ===================== -->
 <section class="section section-dark" id="como-funciona">
   <div class="container como-grid">
-    <div class="como-col">
+    <div class="como-col reveal-stagger">
       <h2 class="title-green">Como funciona a locação?</h2>
       <div class="step">
         <h3>Entre em contato</h3>
@@ -62,7 +67,7 @@
       </div>
     </div>
 
-    <div class="requisitos-col">
+    <div class="requisitos-col reveal">
       <h2 class="title-white">Do que preciso para locar?</h2>
       <ul class="timeline">
         <li class="fill">
@@ -96,12 +101,12 @@
 
 <!-- ===================== BANNER ===================== -->
 <section class="banner">
-  <p>MENOS BUROCRACIA. MAIS CAMINHO PARA VOCÊ TRABALHAR.</p>
+  <p class="reveal">MENOS BUROCRACIA. MAIS CAMINHO PARA VOCÊ TRABALHAR.</p>
 </section>
 
 <!-- ===================== PLANO DE AQUISIÇÃO ===================== -->
 <section class="section section-dark" id="planos">
-  <div class="container plano-wrap">
+  <div class="container plano-wrap reveal-stagger">
     <h2 class="title-green center">Conheça o Plano de Aquisição</h2>
     <div class="plano-card">
       <h3>Plano de Aquisição</h3>
@@ -117,8 +122,8 @@
 <!-- ===================== BENEFÍCIOS ===================== -->
 <section class="section section-green" id="beneficios">
   <div class="container">
-    <h2 class="title-black center">Benefícios</h2>
-    <div class="beneficios-grid">
+    <h2 class="title-black center reveal">Benefícios</h2>
+    <div class="beneficios-grid reveal-stagger">
       <div class="beneficio-card">
         <span class="badge">01</span>
         <p>Plano que cabe na sua realidade</p>
@@ -132,7 +137,7 @@
         <p>Loja física em Goiania</p>
       </div>
     </div>
-    <div class="center">
+    <div class="center reveal">
       <a href="https://wa.me/5564993400268?text=Ola!%20Fiquei%20interessado" target="_blank" rel="noopener" class="btn btn-black-solid">ALUGAR MOTO AGORA</a>
     </div>
   </div>
@@ -141,29 +146,29 @@
 <!-- ===================== NOSSAS MOTOS ===================== -->
 <section class="section section-dark" id="motos">
   <div class="container">
-    <h2 class="title-green center">Conheça nossas motos</h2>
-    <div class="motos-grid">
+    <h2 class="title-green center reveal">Conheça nossas motos</h2>
+    <div class="motos-grid reveal-stagger">
       <div class="moto-card"><img src="assets/moto.jpg" alt="Moto disponível para locação"></div>
       <div class="moto-card"><img src="assets/moto.jpg" alt="Moto disponível para locação"></div>
       <div class="moto-card"><img src="assets/moto.jpg" alt="Moto disponível para locação"></div>
       <div class="moto-card"><img src="assets/moto.jpg" alt="Moto disponível para locação"></div>
     </div>
-    <p class="modelos-disponiveis center">Modelos disponíveis: Factor, Fazer, Titan, CG Start e Start 160</p>
+    <p class="modelos-disponiveis center reveal">Modelos disponíveis: Factor, Fazer, Titan, CG Start e Start 160</p>
   </div>
 </section>
 
 <!-- ===================== FAQ ===================== -->
 <section class="section section-white" id="faq">
   <div class="container faq-wrap">
-    <h2 class="title-black center">Duvidas Frequentes</h2>
-    <div class="faq-list">
+    <h2 class="title-black center reveal">Duvidas Frequentes</h2>
+    <div class="faq-list reveal-stagger">
       <button class="faq-item" type="button"><span class="plus">+</span>Quem pode fazer o plano de aquisição?</button>
       <button class="faq-item" type="button"><span class="plus">+</span>Preciso ter CNH categoria A?</button>
       <button class="faq-item" type="button"><span class="plus">+</span>Quais documentos preciso apresentar?</button>
       <button class="faq-item" type="button"><span class="plus">+</span>Como funciona o plano de aquisição?</button>
       <button class="faq-item" type="button"><span class="plus">+</span>Posso usar a moto para trabalhar com aplicativos?</button>
     </div>
-    <div class="center">
+    <div class="center reveal">
       <a href="https://wa.me/5564993400268?text=Ola!%20Fiquei%20interessado" target="_blank" rel="noopener" class="btn btn-green-solid btn-pill-lg">ESTOU COM DÚVIDAS AINDA</a>
     </div>
   </div>
@@ -171,7 +176,7 @@
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
-  <div class="container">
+  <div class="container reveal-stagger">
     <a href="#home" class="logo logo-footer" aria-label="Adonai Motos">
       <img class="logo-img" src="assets/logo.png" alt="Adonai">
       <span class="logo-motos">MOTOS</span>
