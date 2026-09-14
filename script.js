@@ -5,6 +5,16 @@ document.querySelectorAll('.faq-item').forEach(function (item) {
   });
 });
 
+// ===================== MOTION: barra fixa com sombra ao rolar =====================
+var headerInner = document.querySelector('.site-header');
+if (headerInner) {
+  var toggleHeaderShadow = function () {
+    headerInner.classList.toggle('is-scrolled', window.scrollY > 8);
+  };
+  toggleHeaderShadow();
+  window.addEventListener('scroll', toggleHeaderShadow, { passive: true });
+}
+
 // ===================== MOTION: entrada do Hero =====================
 // O hero fica acima da dobra, então a sequência dispara no carregamento,
 // não ao rolar a página.

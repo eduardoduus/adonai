@@ -46,7 +46,16 @@ a { text-decoration: none; color: inherit; }
 .logo-footer { margin: 0 auto 22px; }
 
 /* ===================== HEADER / NAV ===================== */
-.site-header { background: var(--dark); }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--dark);
+  transition: box-shadow 260ms ease;
+}
+.site-header.is-scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
 
 .header-inner {
   display: flex;
